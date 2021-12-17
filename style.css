@@ -1,0 +1,61 @@
+h2 {
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    animation-name:animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacion {
+    0% {background-color: #F5DEB3}
+    50% {background-color: #DCDCDC;}
+    0% {background-color: #A28C89;}
+}
+
+body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    text-align: justify;
+    padding: 10px;
+    background-image: url(fondo.jpeg);
+}
+
+
+.card mb-3 {
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 15px;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+p {
+    margin: 15px;
+}
+
+h5 {
+    margin: 15px;
+}
+
+.button {
+    margin: 15px;
+    margin-top: 20px;
+    height: 50px;
+    align-items: center;
+}
+
