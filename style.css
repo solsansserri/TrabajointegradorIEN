@@ -46,6 +46,7 @@ img {
     width: 100%;
     border-radius: 10px;
     margin: auto;
+    
 }
 
 
@@ -62,5 +63,17 @@ h5 {
     margin: 15px;
     margin-top: 20px;
     align-items: center;
+    
 }
 
+.paramensaje{
+    height: 100px;
+}
+
+.btn-group {
+    
+    text-align: center;
+    align-items: center;
+    left: 30%;
+    position: relative;
+}
