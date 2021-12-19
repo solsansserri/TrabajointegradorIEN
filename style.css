@@ -66,14 +66,7 @@ h5 {
     
 }
 
-.paramensaje{
-    height: 100px;
-}
-
-.btn-group {
-    
-    text-align: center;
-    align-items: center;
-    left: 30%;
-    position: relative;
+.carousel-item {
+    border-radius: 40px;
+    border-color: black;
 }

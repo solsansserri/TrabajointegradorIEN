@@ -1,38 +1,27 @@
-var getData= function() {
-    var nombreyapellido= document.getElementById("nombreyapellido").value;
-    var correoelectronico= document.getElementById("correoelectronico").value;
-    var mensaje= document.getElementById("mensaje").value;
+var getData = function() {
+    var name = document.getElementById("name").value;
+    var mail = document.getElementById("mail").value;
+    var mensaje = document.getElementById("mensaje").value;
 
-    if(nombreyapellido == "") {
-        document.getElementById("nombreyapellido").focus();
+    if (name == "") {
+        document.getElementById("name").focus();
     } else {
-
+        if (mail == "") {
+            document.getElementById("mail").focus();
+        } else {
+            if (mensaje == "") {
+                document.getElementById("mensaje").focus();
+            } else {
+                console.log(name+" "+mail+" "+mensaje);
+                document.getElementById("name").value = "";
+                document.getElementById("mail").value = "";
+                document.getElementById("mensaje").value = "";
+                document.getElementById("name").focus();
+                alert("Mensaje enviado");
+            }
+        }
     }
+    
 
-    if(correoelectronico == "") {
-        document.getElementById("correoelectronico").focus();
-    } else {
-        
-    }
-
-    if(mensaje == "") {
-        document.getElementById("mensaje").focus();
-    } else {
-        
-    }
-
-
-    console.log(nombreyapellido+" "+correoelectronico+" "+mensaje);
-
-    document.getElementById("nombreyapellido").value = "";
-    document.getElementById("correoelectronico").value = "";
-    document.getElementById("mensaje").value = "";
-    document.getElementById("nombreyapellido").focus();
 }
 
-function mostrarMensaje() {
-    var mensajes =document.getElementById("botonenviar").value;
-    document.querySelector("h1").textContent = mensajes;
-}
-var formulario =document.querySelector("#formulario");
-botonenviar.addEventListener("input", mostrarMensaje);
